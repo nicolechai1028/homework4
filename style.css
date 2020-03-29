@@ -1,0 +1,42 @@
+body {
+    font-family: 'Crimson Text', serif;
+}
+
+.jumbotron {
+    background-color: lightyellow;
+    font-family: 'Crimson Text', serif;
+}
+
+
+#start-button {
+    background-color: lightgreen;
+    margin: 2%;
+    padding: 2%;
+    font-size: 20px;
+}
+
+#timer {
+    margin: 3%;
+}
+
+#answer-box {
+    margin: 3%;
+}
+
+#display-card {
+    padding: 1%;
+}
+
+.choice {
+    padding: 3%;
+    background-color: lightgreen;
+
+}
+
+.score {
+    font-size: 20px;
+}
+
+#play-again {
+    background-color: lightgreen;
+}
