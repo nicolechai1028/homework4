@@ -24,6 +24,7 @@
     </div>
     
     <div class="container">
+       <!--start button-->
         <div class="row">
             <button class="btn" id="start-button">Start!</button>
         </div>
@@ -31,38 +32,44 @@
         <!--Show Timer-->
         <div class="row" id="timer"></div>
         
-        <!--Question-->
-        <div class="card" id="display-card">
+        <!--Question & answers-->
+        <div class="card" id="display-card" style='display:none;'>
             <div class="row mt-5 mb-5 display-box">
                 <div class="col-md-12 text-center">
                     <h1 id="question"></h1>
                 </div>
             </div>
-        </div>
-        <!--Answer choices-->
-        <div class="row" id="answer-box">
-            <div class="col-md-6" id="answer">
-                <div class="container text-center display-box">
-                    <ul>
-                        <button class="choice btn btn-block" id="answer1" value=""></button>
-                    </ul>
-                    <ul>
-                        <button class="choice btn btn-block" id="answer2" value=""></button>
-                    </ul>
-                    <ul>
-                        <button class="choice btn btn-block" id="answer3" value=""></button>
-                    </ul>
-                    <ul>
-                        <button class="choice btn btn-block" id="answer4" value=""></button>
-                    </ul>
+            <!--Answer choices-->
+             <div class="row" id="answer-box">
+                <div class="col-md-6" id="answer">
+                    <div class="container text-center display-box">
+                        <ul>
+                            <button class="choice btn btn-block" id="answer1"></button>
+                        </ul>
+                        <ul>
+                            <button class="choice btn btn-block" id="answer2"></button>
+                        </ul>
+                        <ul>
+                            <button class="choice btn btn-block" id="answer3"></button>
+                        </ul>
+                        <ul>
+                            <button class="choice btn btn-block" id="answer4"></button>
+                        </ul>
+                    </div>
                 </div>
             </div>
+        
         </div>
     </div>
 
     <!--results-->
     <div class="container">
-        <div class="row score">
+        <div class="row score" style='display: none;'>
+            <div id="highscorediv" style='display:none'>
+                   <input id='highScore' placeholder="please input initials"></input>
+            <button id="submit">Submit</button>
+            </div>
+         
             <div class="col-lg-4">
                 <p>Correct:
                     <span id="correct"></span>
@@ -76,7 +83,7 @@
         </div>
         <!--Play Again-->
         <div class="row mt-3 mb-3">
-            <button class="btn btn-lg" id="play-again">Play Again</button>
+            <button class="btn btn-lg" id="play-again" style='display: none;'>Play Again</button>
         </div>
     </div>    
 </body>
